@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.CountDay__container {
+  text-align: center;
+  position: sticky;
+  min-height: 700px;
+}
+.SaveTheDate__img {
+  width: 100%;
+  max-width: 1444px;
+}
+.CountDay__container > .CountDay__Countercontainer {
+  position: absolute;
+  font-family: "Pacifico", cursive;
+  color: transparent;
+  text-align: center;
+  -webkit-text-stroke: 0.1px white; /* width and color */
+  font-size: 40px;
+  line-height: 50px;
+  background-color: rgb(210, 50, 50,.3);
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+.CountDay__container > .CountDay__Countercontainer > h1 {
+  padding-top: 250px;
+}
+.CountDay__container > .CountDay__Countercontainer > h1 > span {
+  font-size: 80px;
+  -webkit-text-stroke: 1px white; /* width and color */
+}
+
+@media (max-width: 768px) {
+  .SaveTheDate__container > h1 {
+    font-size: 20px;
+    line-height: 15px;
+  }
+  .SaveTheDate__container > h1 > span {
+    font-size: 10px;
+  }
+}

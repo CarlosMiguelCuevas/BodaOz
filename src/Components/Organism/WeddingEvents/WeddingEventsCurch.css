@@ -1,0 +1,70 @@
+.WeedingEventsChurchP__container {
+  min-height: 1800px;
+}
+.WeedingEvents__container,
+.WeedingEventsChurch__Mapcontainer,
+.WeedingEventsGroup__container {
+  color: white;
+  max-width: 80%;
+  margin-left: 10%;
+  font-family: "Great Vibes", cursive;
+  text-align: -webkit-center;
+}
+.WeedingEventsChurch__container > img {
+  margin: auto;
+  position: sticky;
+  max-height: 700px;
+  margin-top: 50px;
+}
+.WeedingEvents__Background {
+  position: absolute;
+  max-height: 400px;
+}
+.WeddingEventChurch__container {
+  margin-left: 400px;
+}
+.WeddingEventGeneralTitle {
+  text-align: center;
+  font-size: 100px;
+}
+.WeedingEventsChurch__container {
+  display: grid;
+  grid-template-columns: 100%;
+  column-gap: 2%;
+  color: white;
+  font-family: "Great Vibes", cursive;
+}
+.WeedingEventsChurch__Mapcontainer > p {
+  box-shadow: #008080 0px 15px 15px -10px;
+  margin: auto;
+}
+.WeedingEvents__container > h1 {
+  box-shadow: rgb(210, 50, 50) 0px 15px 15px -10px, #008080 0px -15px 15px -10px,
+    rgb(210, 50, 50) -15px 0px 15px -10px, #008080 15px 0px 15px -10px;
+  color: white;
+  max-width: 500px;
+}
+.WeedingEventsChurch__container > p {
+  box-shadow: rgb(210, 50, 50) 0px 15px 15px -10px;
+}
+.WeedingEventsChurch__Mapcontainer > div > .map-container > .map {
+  width: 80% !important;
+  height: 500px !important;
+  margin-left: 10%;
+}
+.WeedingEventsChurch__Mapcontainer {
+  margin-top: 20px;
+  height: 400px;
+}
+.WeedingEventsGroup__container {
+  margin-top: 200px;
+}
+.WeedingEventsChurch__container > p > h2 {
+  font-size: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.WeedingEventsChurch__container > p > h2>svg {
+ margin-left: 20px;
+ cursor: pointer;
+}

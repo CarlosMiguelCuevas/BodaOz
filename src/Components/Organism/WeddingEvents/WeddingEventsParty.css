@@ -1,0 +1,39 @@
+.WeedingEventsPartyP__container{
+  height: 1000px;
+  max-width: 80%;
+  margin-left: 10%;
+}
+.WeedingEventsParty__container >img{
+  max-width: 100%;
+}
+.WeedingEventsParty__container {
+  color: white;
+  font-family: "Great Vibes", cursive;
+}
+.WeedingEvents__Background {
+  position: absolute;
+}
+.WeddingEventChurch__container {
+  margin-left: 400px;
+}
+.WeddingEventGeneralTitle {
+  text-align: center;
+  font-size: 100px;
+}
+.WeedingEventsParty__container {
+  display: grid;
+  grid-template-columns: 68% 30%;
+  column-gap: 2%;
+}
+.WeedingEventsParty__container > h1 {
+  color: white;
+  font-size: 40px;
+}
+.WeedingEventsParty__Mapcontainer > div > .map-container > .map {
+  width: 80% !important;
+  height: 500px !important;
+}
+.WeedingEventsParty__Mapcontainer{
+  margin-top: 20px;
+  height: 400px;
+}
