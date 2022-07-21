@@ -26,16 +26,14 @@ const WeddingEventsParty = () => {
               <h1>
                 <b>
                   Fiesta:
-                  <br />
-                  Jardin del Lago
+                  <br />{" "}
                 </b>
+                Jardin del Lago
               </h1>
               <h1>
-                <b>
-                  Hora:
-                  <br />
-                  9:00pm
-                </b>
+                <b>Hora:</b>
+                <br />
+                9:00pm
               </h1>
             </p>
             <img src={JardinDelLago} />
@@ -66,8 +64,8 @@ const WeddingEventsParty = () => {
                 <b>
                   Grupo:
                   <br />
-                  Grupo Platino
                 </b>
+                Grupo Platino
               </h1>
               <h2>
                 <FontAwesomeIcon

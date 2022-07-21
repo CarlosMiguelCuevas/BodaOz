@@ -3,6 +3,8 @@
   text-align: center;
   position: sticky;
   min-height: 100vh;
+  background-position-y: "center";
+  background-size: cover;
 }
 .SaveTheDate__img {
   width: 100%;
@@ -15,11 +17,11 @@
   color: transparent;
   text-align: center;
   -webkit-text-stroke: 1px gray; /* width and color */
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 0px;
   letter-spacing: 5px;
   width: 100%;
-  line-height: 80px;
+  line-height: 50px;
 }
 .SaveTheDate__container > h1 {
   position: absolute;
@@ -28,7 +30,7 @@
   right: 0;
   color: transparent;
   text-align: center;
-  -webkit-text-stroke: 0.1px white; /* width and color */
+  -webkit-text-stroke: 1px white; /* width and color */
   font-size: 40px;
   line-height: 50px;
   margin-bottom: 0px;
@@ -40,40 +42,39 @@
 }
 .SaveTheDate__container > h1 :before,
 .SaveTheDate__container > h1 :after {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    padding: 20px 100px;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border: 2px solid rgba(0, 128, 128, 0.3);;
-    animation: pulse 2s linear infinite
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 20px 100px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: 2px solid rgba(0, 128, 128, 0.3);
+  animation: pulse 2s linear infinite;
 }
 
 .pulse:after {
-    animation-delay: 1s;
+  animation-delay: 1s;
 }
 
-
 @keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 rgba(0, 128, 128, 0.7);
-	}
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 128, 128, 0.7);
+  }
 
-	70% {
-		box-shadow: 0 0 0 50px rgba(0, 128, 128, 0);
-	}
+  70% {
+    box-shadow: 0 0 0 50px rgba(0, 128, 128, 0);
+  }
 
-	100% {
-		box-shadow: 0 0 0 0 rgba(0, 128, 128, 0);
-	}
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 128, 128, 0);
+  }
 }
 .SaveTheDate__container > h1 > span {
   font-size: 30px;
-  -webkit-text-stroke: 0.5px white; /* width and color */
+  -webkit-text-stroke: 1px white; /* width and color */
 }
 
 @media (max-width: 768px) {
@@ -83,5 +84,28 @@
   }
   .SaveTheDate__container > h1 > span {
     font-size: 10px;
+    -webkit-text-stroke: 1px white; /* width and color */
+  }
+  .SaveTheDate__container {
+    background-position-x: center;
+    background-size: auto 100vh !important;
+  }
+  .SaveTheDate__container > h1 {
+    font-size: 30px;
+    line-height: 30px;
+    width: 100vw;
+    padding: initial;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    height: 75px;
+    -webkit-text-stroke: 1px white; /* width and color */
+    letter-spacing: 5px;
+  }
+  .SaveTheDate__container > h1 > span {
+    font-size: 30px;
+    margin: 0;
+  }
+  .SaveTheDate__container > h2 {
+    font-size: 30px;
   }
 }

@@ -16,14 +16,11 @@ const SaveTheDate = () => {
     <div
       className="SaveTheDate__container"
       style={{
-        backgroundSize: "cover",
-
         backgroundImage: `url(${SaveTheDateToon})`,
-        backgroundPositionY: "center",
       }}
     >
       <h2>
-        Karen Verdugo & Osvaldo Monzón <br />
+        Karen Verdugo <br /> &  <br />Osvaldo Monzón <br />
         Amarración
       </h2>
       <h1>

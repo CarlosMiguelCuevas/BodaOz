@@ -16,8 +16,6 @@ const CountDay = () => {
     <div
       className="CountDay__container"
       style={{
-        backgroundSize: "cover",
-
         backgroundImage: `url(${Ring})`,
       }}
     >
