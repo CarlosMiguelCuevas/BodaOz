@@ -7,7 +7,7 @@ const ConfettiO = ({mobile}) => {
     <Confetti
       width={width}
       height={height*6}
-      numberOfPieces={50}
+      numberOfPieces={mobile?25:50}
       colors={["#008080", "#D23232"]}
       drawShape={(ctx) => {
        
