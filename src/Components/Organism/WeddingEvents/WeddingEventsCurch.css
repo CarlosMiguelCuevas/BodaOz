@@ -1,13 +1,13 @@
 .WeedingEventsChurchP__container {
-  min-height: 1800px;
+  min-height: 2000px;
 }
 .WeedingEvents__container,
 .WeedingEventsChurch__Mapcontainer,
 .WeedingEventsGroup__container {
-  color: white;
+  color: #333;
   max-width: 80%;
   margin-left: 10%;
-  font-family: "Great Vibes", cursive;
+  font-family: Amatic SC;
   text-align: -webkit-center;
 }
 .WeedingEventsChurch__container > img {
@@ -31,21 +31,21 @@
   display: grid;
   grid-template-columns: 100%;
   column-gap: 2%;
-  color: white;
-  font-family: "Great Vibes", cursive;
+  color: #333;
+  font-family: Amatic SC, cursive;
 }
 .WeedingEventsChurch__Mapcontainer > p {
-  box-shadow: #008080 0px 15px 15px -10px;
+  box-shadow: #008080 0px 15px 15px -20px;
   margin: auto;
 }
 .WeedingEvents__container > h1 {
-  box-shadow: rgb(210, 50, 50) 0px 15px 15px -10px, #008080 0px -15px 15px -10px,
-    rgb(210, 50, 50) -15px 0px 15px -10px, #008080 15px 0px 15px -10px;
-  color: white;
+  box-shadow: rgb(210, 50, 50) 0px 15px 15px -15px, #008080 0px -15px 15px -px;
+
+  color: #333;
   max-width: 500px;
 }
 .WeedingEventsChurch__container > p {
-  box-shadow: rgb(210, 50, 50) 0px 15px 15px -10px;
+  box-shadow: rgb(210, 50, 50) 0px 15px 15px -20px;
 }
 .WeedingEventsChurch__Mapcontainer > div > .map-container > .map {
   width: 80% !important;
@@ -69,7 +69,6 @@
   cursor: pointer;
 }
 .WeedingEventsChurch__container > p > h1 > b {
-  -webkit-text-stroke: 1px white; /* width and color */
 }
 @media (max-width: 768px) {
   .WeedingEventsChurchP__container {
@@ -85,7 +84,7 @@
   }
   .WeedingEventsChurch__container > p > h1 > b {
     font-size: 60px;
-    -webkit-text-stroke: 1px white; /* width and color */
+    /* -webkit-text-stroke: 1px white; */
   }
   .WeedingEventsChurch__container > img {
     max-height: initial;

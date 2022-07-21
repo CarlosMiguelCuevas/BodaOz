@@ -30,7 +30,7 @@
   right: 0;
   color: transparent;
   text-align: center;
-  -webkit-text-stroke: 1px white; /* width and color */
+  -webkit-text-stroke: 1px #333; /* width and color */
   font-size: 40px;
   line-height: 50px;
   margin-bottom: 0px;

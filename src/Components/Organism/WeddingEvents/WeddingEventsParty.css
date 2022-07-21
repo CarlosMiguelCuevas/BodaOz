@@ -51,7 +51,7 @@
   }
   .WeedingEventsChurch__container > p > h1 > b {
     font-size: 60px;
-    -webkit-text-stroke: 1px white; /* width and color */
+    /* -webkit-text-stroke: 1px white;   */
   }
   .WeedingEventsChurch__container > img {
     max-height: initial;

@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 html{
-  background-color: black;
+  background-color: #FBF9F7;
 
 }
 .App {
-  background-color: black;
+  background-color: #FBF9F7;
   /* background: rgb(0,128,128);
 background: linear-gradient(90deg, rgba(0,128,128,1) 0%, rgba(210,50,48,1) 25%, rgba(0,128,128,1) 50%, rgba(210,50,48,1) 75%, rgba(0,128,128,1) 100%); */
 width: 100vw;

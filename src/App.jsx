@@ -6,6 +6,7 @@ import SaveTheDate from "./Components/Organism/SaveTheDate/SaveTheDate";
 import CountDay from "./Components/Organism/CountDay/CountDay";
 import WeddingEventsCurch from "./Components/Organism/WeddingEvents/WeddingEventsCurch";
 import WeddingEventsParty from "./Components/Organism/WeddingEvents/WeddingEventsParty";
+import Confirm from "./Components/Organism/Confirm/Confirm";
 function App() {
   const [mobile, setMobile] = useState(window.innerWidth<=768);
     const handleWindowResize = () => {
@@ -29,6 +30,7 @@ function App() {
       </Zoom>
       <WeddingEventsCurch />
       <WeddingEventsParty />
+      <Confirm />
     </div>
   );
 }
