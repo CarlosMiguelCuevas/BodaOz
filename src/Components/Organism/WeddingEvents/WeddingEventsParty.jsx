@@ -62,7 +62,7 @@ const WeddingEventsParty = () => {
             <p>
               <h1>
                 <b>
-                  Grupo:
+                  Música:
                   <br />
                 </b>
                 Grupo Platino
