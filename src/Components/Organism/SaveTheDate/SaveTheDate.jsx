@@ -20,8 +20,7 @@ const SaveTheDate = () => {
       }}
     >
       <h2>
-        Karen Verdugo <br /> &  <br />Osvaldo Monzón <br />
-        Amarración
+        Karen Verdugo <br /> & Osvaldo Monzón 
       </h2>
       <h1>
         Save the date

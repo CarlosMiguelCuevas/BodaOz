@@ -30,11 +30,10 @@
   right: 0;
   color: transparent;
   text-align: center;
-  -webkit-text-stroke: 1px #333; /* width and color */
+  -webkit-text-stroke: 1px rgb(0, 128, 128); /* width and color */
   font-size: 40px;
   line-height: 50px;
   margin-bottom: 0px;
-  background-color: rgba(0, 128, 128, 0.5);
   padding: 20px 100px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -49,11 +48,12 @@
   right: 0px;
   bottom: 0px;
   padding: 20px 100px;
-  border-top-left-radius: 50%;
+  background-color: rgb(0, 0, 0,.1);
+  /* border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border: 2px solid rgba(0, 128, 128, 0.3);
-  animation: pulse 2s linear infinite;
-}
+  animation: pulse 2s linear infinite;*/
+} 
 
 .pulse:after {
   animation-delay: 1s;
@@ -61,20 +61,29 @@
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(0, 128, 128, 0.7);
+    background-color:rgba(0, 128, 128, 0.3);
   }
 
-  70% {
-    box-shadow: 0 0 0 50px rgba(0, 128, 128, 0);
+  20% {
+    background-color: rgba(0, 128, 128, 0);
   }
 
+  40% {
+    background-color: rgba(0, 128, 128, 0);
+  }
+  60% {
+    background-color: rgba(0, 128, 128, .3);
+  }
+  80% {
+    background-color: rgba(0, 128, 128, 0);
+  }
   100% {
-    box-shadow: 0 0 0 0 rgba(0, 128, 128, 0);
+    background-color: rgba(0, 128, 128, 0.3);
   }
 }
 .SaveTheDate__container > h1 > span {
   font-size: 30px;
-  -webkit-text-stroke: 1px white; /* width and color */
+  -webkit-text-stroke: 1px  rgba(210, 50, 50); /* width and color */
 }
 
 @media (max-width: 768px) {
@@ -84,7 +93,6 @@
   }
   .SaveTheDate__container > h1 > span {
     font-size: 10px;
-    -webkit-text-stroke: 1px white; /* width and color */
   }
   .SaveTheDate__container {
     background-position-x: center;
@@ -98,7 +106,6 @@
     padding-bottom: 20px;
     padding-top: 20px;
     height: 75px;
-    -webkit-text-stroke: 1px white; /* width and color */
     letter-spacing: 5px;
   }
   .SaveTheDate__container > h1 > span {

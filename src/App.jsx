@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Confetti mobile={mobile}/>
+      {/* <Confetti mobile={mobile}/> */}
       <Fade>
         <SaveTheDate />
       </Fade>
