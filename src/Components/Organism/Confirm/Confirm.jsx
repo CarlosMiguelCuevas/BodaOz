@@ -2,10 +2,24 @@ import React, { useEffect, useState, useRef } from "react";
 import { Bounce } from "react-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import bbs from "../../../assets/img/Confirm/bbs.png"
+import bbs from "../../../assets/img/Confirm/bbs.png";
+import requestAxios from "../../../util/requestAxios";
 import "./Confirm.css";
 
 const WeddingEventsParty = () => {
+  const [invitados, setInvitados] = useState([]);
+  useEffect(() => {
+    getInfo();
+  }, []);
+  const getInfo = async () => {
+    debugger;
+    const { error, data } = await requestAxios({
+      url: `wedding/GetInvitados`,
+      method: "get",
+      data: {},
+    });
+    if (error == "") setInvitados(data);
+  };
   const data = [
     {
       name: "Santa Clara",
@@ -28,7 +42,8 @@ const WeddingEventsParty = () => {
             </h1>
             <h2>
               Favor de Confirmar la asistencia para ayudarnos a tener el evento
-              que deseamos ♥<br /><br />
+              que deseamos ♥<br />
+              <br />
               <span
                 className="btnConfirm"
                 onClick={() =>
@@ -46,12 +61,16 @@ const WeddingEventsParty = () => {
               <br />
             </h2>
           </p>
+          {invitados.map((invitado,i) => (
+                  <div key={`invitado${i}`}>{invitado.nombre}</div>
+                ))}
           <p>
             <h1>
               <b>
                 Los esperamos!
+                
                 <br />
-                <img className="Confirm__img"src={bbs}/>
+                <img className="Confirm__img" src={bbs} />
               </b>
             </h1>
           </p>

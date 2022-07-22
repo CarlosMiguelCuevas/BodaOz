@@ -1,5 +1,5 @@
 import Countdown from "react-countdown";
-import SaveTheDateToon from "../../../Assets/img/SaveTheDate/SaveTheDateToon.jpg";
+import SaveTheDateToonTransparent from "../../../Assets/img/SaveTheDate/SaveTheDateToonTransparent.png";
 import "./SaveTheDate.css";
 
 const SaveTheDate = () => {
@@ -16,7 +16,7 @@ const SaveTheDate = () => {
     <div
       className="SaveTheDate__container"
       style={{
-        backgroundImage: `url(${SaveTheDateToon})`,
+        backgroundImage: `url(${SaveTheDateToonTransparent})`,
       }}
     >
       <h2>
