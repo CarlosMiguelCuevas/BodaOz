@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       {/* <Confetti mobile={mobile}/> */}
       <Fade>
-        <SaveTheDate />
+        <SaveTheDate  mobile={mobile}/>
       </Fade>
       <Zoom left>
         <CountDay />

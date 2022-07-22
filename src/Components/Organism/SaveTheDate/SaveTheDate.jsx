@@ -1,8 +1,9 @@
 import Countdown from "react-countdown";
 import SaveTheDateToonTransparent from "../../../Assets/img/SaveTheDate/SaveTheDateToonTransparent.png";
+import SaveTheDateToonTransparentMobile from "../../../Assets/img/SaveTheDate/SaveTheDateToonTransparentMobile.png";
 import "./SaveTheDate.css";
 
-const SaveTheDate = () => {
+const SaveTheDate = ({mobile}) => {
   const dateWeeding = new Date(2022, 11, 28);
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     // Render a countdown
@@ -16,7 +17,7 @@ const SaveTheDate = () => {
     <div
       className="SaveTheDate__container"
       style={{
-        backgroundImage: `url(${SaveTheDateToonTransparent})`,
+        backgroundImage: `url(${mobile?SaveTheDateToonTransparentMobile:SaveTheDateToonTransparent})`,
       }}
     >
       <h2>
