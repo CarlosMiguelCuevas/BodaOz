@@ -1,6 +1,6 @@
 /* global google */
 import React, { Component } from "react";
-import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
+import { Wrapper } from "@googlemaps/react-wrapper";
 import InfoWindowEx from "./InfoWindowEx";
 
 export class MapContainer extends Component {
@@ -64,6 +64,6 @@ export class MapContainer extends Component {
     }
 }
 
-export default GoogleApiWrapper({
-    apiKey: "AIzaSyDagzrcyHNLIx_-6txnv36-93IfFhM33lw"
-})(MapContainer);
+// export default GoogleApiWrapper({
+//     apiKey: "AIzaSyDagzrcyHNLIx_-6txnv36-93IfFhM33lw"
+// })(MapContainer);

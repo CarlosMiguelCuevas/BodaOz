@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Bounce } from "react-reveal";
+import { Bounce } from "react-awesome-reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import bbs from "../../../assets/img/Confirm/bbs.png";

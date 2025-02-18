@@ -1,6 +1,5 @@
 import Countdown from "react-countdown";
-import SaveTheDateToonTransparent from "../../../Assets/img/SaveTheDate/SaveTheDateToonTransparent.png";
-import SaveTheDateToonTransparentMobile from "../../../Assets/img/SaveTheDate/SaveTheDateToonTransparentMobile.png";
+import SaveTheDateCover from "../../../../public/welcome_image.jpg";
 import "./SaveTheDate.css";
 
 const SaveTheDate = ({mobile}) => {
@@ -17,16 +16,16 @@ const SaveTheDate = ({mobile}) => {
     <div
       className="SaveTheDate__container"
       style={{
-        backgroundImage: `url(${mobile?SaveTheDateToonTransparentMobile:SaveTheDateToonTransparent})`,
+        backgroundImage: `url(${SaveTheDateCover})`,
       }}
     >
       <h2>
-        Karen Verdugo <br /> & Osvaldo Monzón 
+        Cristina Coronado <br /> & Carlos Cuevas 
       </h2>
       <h1>
         Save the date
         <br />
-        <span>18 - Noviembre -2022</span>
+        <span>26 - Abril -2025</span>
       </h1>
     </div>
   );

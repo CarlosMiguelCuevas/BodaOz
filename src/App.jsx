@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from "react";
 import "./App.css";
-import { Fade, Zoom } from "react-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 import { Confetti } from "./Components/Atoms";
 import SaveTheDate from "./Components/Organism/SaveTheDate/SaveTheDate";
 import CountDay from "./Components/Organism/CountDay/CountDay";

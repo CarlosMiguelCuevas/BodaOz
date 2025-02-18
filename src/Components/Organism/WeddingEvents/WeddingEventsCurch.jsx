@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Flip, Slide } from "react-reveal";
+import { Flip, Slide } from "react-awesome-reveal";
 import Fatima1 from "../../../Assets/img/WeddingEvent/Church/Fatima1.jpg";
-import Map from "../../Atoms/Map/Map";
+// import Map from "../../Atoms/Map/Map";
 import "./WeddingEventsCurch.css";
 
 const WeddingEvents = () => {
@@ -37,7 +37,7 @@ const WeddingEvents = () => {
           </div>
         </div>
       </Slide>
-      <Slide right>
+      {/* <Slide right>
         <div className="WeedingEventsChurch__Mapcontainer">
           <p>
             <h1>
@@ -52,7 +52,7 @@ const WeddingEvents = () => {
             }
           />
         </div>
-      </Slide>
+      </Slide> */}
     </div>
   );
 };

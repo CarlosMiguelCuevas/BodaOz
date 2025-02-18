@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Slide } from "react-reveal";
-import Map from "../../Atoms/Map/Map";
+import { Slide } from "react-awesome-reveal";
+// import Map from "../../Atoms/Map/Map";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import JardinDelLago from "../../../Assets/img/WeddingEvent/Party/JardinDelLago.jpeg";
@@ -40,7 +40,7 @@ const WeddingEventsParty = () => {
           </div>
         </div>
       </Slide>
-      <Slide right>
+      {/* <Slide right>
         <div className="WeedingEventsChurch__Mapcontainer">
           <p>
             <h1>
@@ -55,7 +55,7 @@ const WeddingEventsParty = () => {
             }
           />
         </div>
-      </Slide>
+      </Slide> */}
       <Slide bottom>
         <div className="WeedingEventsGroup__container">
           <div className="WeedingEventsChurch__container">
