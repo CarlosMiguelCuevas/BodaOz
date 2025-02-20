@@ -3,7 +3,9 @@ import { Slide } from "react-awesome-reveal";
 // import Map from "../../Atoms/Map/Map";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import JardinDelLago from "../../../Assets/img/WeddingEvent/Party/JardinDelLago.jpeg";
+import SalonFoto1 from "../../../Assets/img/WeddingEvent/Party/salon_eventos_1.jpg";
+import SalonFoto2 from "../../../Assets/img/WeddingEvent/Party/salon_eventos_2.jpg";
+import SalonFoto3 from "../../../Assets/img/WeddingEvent/Party/salon_eventos_3.jpg";
 import GrupoPlatino1 from "../../../Assets/img/WeddingEvent/Party/GrupoPlatino1.jpg";
 import "./WeddingEventsParty.css";
 
@@ -25,18 +27,20 @@ const WeddingEventsParty = () => {
             <p>
               <h1>
                 <b>
-                  Fiesta:
+                  Lugar:
                   <br />{" "}
                 </b>
-                Jardin del Lago
+                La Marquesa Jardin
               </h1>
               <h1>
                 <b>Hora:</b>
                 <br />
-                9:00pm
+                6:00pm
               </h1>
             </p>
-            <img src={JardinDelLago} />
+            <img src={SalonFoto1} />
+            <img src={SalonFoto2} />
+            <img src={SalonFoto3} />
           </div>
         </div>
       </Slide>

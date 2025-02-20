@@ -16,27 +16,7 @@ const WeddingEvents = () => {
   ];
   return (
     <div className="WeedingEventsChurchP__container">
-      <Slide left>
-        <div className="WeedingEvents__container">
-          <h1 className="WeddingEventGeneralTitle">Eventos ♥</h1>
-          <div className="WeedingEventsChurch__container">
-            <p>
-              <h1>
-                <b>Misa:</b>
-                <br />
-                Parroquia Nuestra Señora del Rosario de Fátima
-              </h1>
-              <h1>
-                <b>Hora:</b>
-                <br />
-                4:30pm
-              </h1>
-            </p>
-
-            <img src={Fatima1} />
-          </div>
-        </div>
-      </Slide>
+     
       {/* <Slide right>
         <div className="WeedingEventsChurch__Mapcontainer">
           <p>
