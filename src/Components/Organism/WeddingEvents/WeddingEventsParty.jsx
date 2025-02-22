@@ -1,6 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Slide } from "react-awesome-reveal";
-// import Map from "../../Atoms/Map/Map";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import SalonFoto1 from "../../../Assets/img/WeddingEvent/Party/salon_eventos_1.jpg";
@@ -8,6 +7,37 @@ import SalonFoto2 from "../../../Assets/img/WeddingEvent/Party/salon_eventos_2.j
 import SalonFoto3 from "../../../Assets/img/WeddingEvent/Party/salon_eventos_3.jpg";
 import GrupoPlatino1 from "../../../Assets/img/WeddingEvent/Party/GrupoPlatino1.jpg";
 import "./WeddingEventsParty.css";
+
+const Map = ({ center, zoom }) => {
+  const mapRef = useRef();
+
+  useEffect(() => {
+    const initializeMap = () => {
+      const map = new window.google.maps.Map(mapRef.current, {
+        center,
+        zoom,
+      });
+
+      new window.google.maps.Marker({
+        position: center,
+        map,
+      });
+    };
+
+    if (window.google && window.google.maps) {
+      initializeMap();
+    } else {
+      const script = document.createElement("script");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDagzrcyHNLIx_-6txnv36-93IfFhM33lw`;
+      script.async = true;
+      script.defer = true;
+      script.onload = initializeMap;
+      document.head.appendChild(script);
+    }
+  }, [center, zoom]);
+
+  return <div ref={mapRef} style={{ height: "400px", width: "100%" }} />;
+};
 
 const WeddingEventsParty = () => {
   const data = [
@@ -44,48 +74,38 @@ const WeddingEventsParty = () => {
           </div>
         </div>
       </Slide>
-      {/* <Slide right>
+      <Slide right>
         <div className="WeedingEventsChurch__Mapcontainer">
-          <p>
-            <h1>
-              <b>Ubicación:</b>
-            </h1>
-          </p>
-          <Map
-            places={data}
-            center={{ lat: 29.0149963, lng: -110.9730557 }}
-            url={
-              "https://www.google.com/maps/place/Jard%C3%ADn+del+Lago/@29.0140924,-110.9683613,15z/data=!4m5!3m4!1s0x0:0xa640c7c70797a00f!8m2!3d29.0140924!4d-110.9683613"
-            }
-          />
+          <h1>
+            <b>Ubicación:</b>
+          </h1>
+          <Map center={{ lat: 29.0149963, lng: -110.9730557 }} zoom={15} />
         </div>
-      </Slide> */}
+      </Slide>
       <Slide bottom>
         <div className="WeedingEventsGroup__container">
           <div className="WeedingEventsChurch__container">
-            <p>
-              <h1>
-                <b>
-                  Música:
-                  <br />
-                </b>
-                Grupo Platino
-              </h1>
-              <h2>
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  onClick={() =>
-                    window.open("https://www.facebook.com/grupomusicalplatino/")
-                  }
-                />
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  onClick={() =>
-                    window.open("https://www.instagram.com/grupoplatinohmo/")
-                  }
-                />
-              </h2>
-            </p>
+            <h1>
+              <b>
+                Música:
+                <br />
+              </b>
+              Grupo Platino
+            </h1>
+            <h2>
+              <FontAwesomeIcon
+                icon={faFacebook}
+                onClick={() =>
+                  window.open("https://www.facebook.com/grupomusicalplatino/")
+                }
+              />
+              <FontAwesomeIcon
+                icon={faInstagram}
+                onClick={() =>
+                  window.open("https://www.instagram.com/grupoplatinohmo/")
+                }
+              />
+            </h2>
             <img src={GrupoPlatino1} />
           </div>
         </div>
