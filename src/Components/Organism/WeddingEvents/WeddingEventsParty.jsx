@@ -7,6 +7,8 @@ import SalonFoto2 from "../../../Assets/img/WeddingEvent/Party/salon_eventos_2.j
 import SalonFoto3 from "../../../Assets/img/WeddingEvent/Party/salon_eventos_3.jpg";
 import GrupoPlatino1 from "../../../Assets/img/WeddingEvent/Party/GrupoPlatino1.jpg";
 import "./WeddingEventsParty.css";
+import { Carousel } from 'react-responsive-carousel';
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Map = ({ center, zoom }) => {
   const mapRef = useRef();
@@ -68,9 +70,17 @@ const WeddingEventsParty = () => {
                 6:00pm
               </h1>
             </p>
-            <img src={SalonFoto1} />
-            <img src={SalonFoto2} />
-            <img src={SalonFoto3} />
+            <Carousel>
+                <div>
+                    <img src={SalonFoto1} />
+                </div>
+                <div>
+                    <img src={SalonFoto2} />
+                </div>
+                <div>
+                    <img src={SalonFoto3} />
+                </div>
+            </Carousel>
           </div>
         </div>
       </Slide>
